@@ -1,0 +1,31 @@
+{
+    "isaacsim.nodes.more_nodes.DynamicMatcher": {
+        "version": 1,
+        "language": "python",
+        "icon": "data/icon.png",
+        "uiName": "Dynamic Matcher",
+        "description": [
+            "The description key value is required on all nodes and will be used in the generated documentation of the node.",
+            "Visit https://docs.omniverse.nvidia.com/kit/docs/omni.graph.docs/latest/dev/ogn/ogn_reference_guide.html",
+            "for a detailed guide to the syntax of the .ogn file.",
+            "Visit https://docs.omniverse.nvidia.com/kit/docs/omni.graph.docs/latest/dev/ogn/attribute_types.html",
+            "for more details about the supported attribute data types for inputs and outputs."
+        ],
+        "categoryDefinitions": "config/CategoryDefinition.json",
+        "categories": ["More Nodes"],
+        "inputs": {
+            "execIn": {
+                "type": "execution",
+                "description": "Signal to the graph that this node is ready to be executed.",
+                "uiName": "Execute In"
+            }
+        },
+        "outputs": {
+            "execOut": {
+                "type": "execution",
+                "description": "Signal to the graph that execution can continue downstream.",
+                "uiName": "Execute Out"
+            }
+        }
+    }
+}

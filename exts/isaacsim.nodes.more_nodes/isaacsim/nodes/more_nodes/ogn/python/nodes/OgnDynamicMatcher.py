@@ -1,20 +1,27 @@
 """
-Dynamic Matcher Node Implementation
+OmniGraph core Python API:
+  https://docs.omniverse.nvidia.com/kit/docs/omni.graph/latest/Overview.html
 
-This node automatically processes dynamic inputs and passes their data to corresponding outputs.
-Usage: Add inputs with pattern 'inputs:dataX' (where X is a number) and the node will 
-automatically handle the data passing.
+OmniGraph attribute data types:
+  https://docs.omniverse.nvidia.com/kit/docs/omni.graph.docs/latest/dev/ogn/attribute_types.html
 
-Example:
-- Add input: inputs:data0 (type: double)  
-- Add input: inputs:data1 (type: bool)
-- Add input: inputs:data2 (type: int)
+Collection of OmniGraph code examples in Python:
+  https://docs.omniverse.nvidia.com/kit/docs/omni.graph.docs/latest/dev/ogn/ogn_code_samples_python.html
 
-The node will process these and pass data through during computation.
+Collection of OmniGraph tutorials:
+  https://docs.omniverse.nvidia.com/kit/docs/omni.graph.tutorials/latest/Overview.html
 """
 
 import omni.graph.core as og
 import carb
+
+
+class OgnDynamicMatcherInternalState:
+    """Convenience class for maintaining per-node state information"""
+
+    def __init__(self):
+        """Instantiate the per-node state information"""
+        status = False
 
 
 class OgnDynamicMatcher:
@@ -107,3 +114,4 @@ class OgnDynamicMatcher:
         """
         carb.log_info("DynamicMatcher node initialized")
         pass
+
