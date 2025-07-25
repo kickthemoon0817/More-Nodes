@@ -1,0 +1,31 @@
+{
+    "DynamicMatcher": {
+        "version": 1,
+        "language": "python",
+        "icon": "data/icon.png",
+        "uiName": "Dynamic Matcher",
+        "description": [
+            "A node that dynamically matches inputs to outputs.",
+            "For each input added (like 'inputs:data0', 'inputs:data1', etc.),",
+            "a corresponding output will be automatically created with the same type and name",
+            "(like 'outputs:data0', 'outputs:data1', etc.).",
+            "The node copies data from each input to its corresponding output."
+        ],
+        "categoryDefinitions": "config/CategoryDefinition.json",
+        "categories": ["More Nodes"],
+        "inputs": {
+            "execIn": {
+                "type": "execution",
+                "description": "Signal to the graph that this node is ready to be executed.",
+                "uiName": "Execute In"
+            }
+        },
+        "outputs": {
+            "execOut": {
+                "type": "execution",
+                "description": "Signal to the graph that execution can continue downstream.",
+                "uiName": "Execute Out"
+            }
+        }
+    }
+}
