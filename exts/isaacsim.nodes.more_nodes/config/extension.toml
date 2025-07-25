@@ -1,0 +1,39 @@
+[package]
+
+# Semantic Versioning is used: https://semver.org/
+version = "0.1.0"
+
+# Description
+category = "Simulation"
+readme = "docs/README.md"
+
+title = "More Nodes"
+author = ["Sungmin Kim", "Kickthemoon0817", "Kickthemoon0817@gmail.com"]
+maintainer = "Kickthemoon0817"
+description ="Color adjustment extension for Isaac Sim Stage"
+repository = "Not yet"
+keywords = ["extension", "color", "HSV", "RGB", "light"]
+
+icon = "data/icon.png"
+preview_image = "data/preview.png"
+
+
+[dependencies]
+"omni.ui" = {}
+"omni.kit.menu.utils" = {}
+"omni.kit.window.popup_dialog" = {}
+
+
+[[python.module]]
+name = "isaacsim.nodes.latency"
+
+[[test]]
+args = [
+    "--/app/window/dpiScaleOverride=1.0",
+    "--/app/window/scaleToMonitor=false",
+    "--no-window"
+]
+dependencies = [
+    "omni.kit.renderer.core",
+    "omni.kit.renderer.capture",
+]
