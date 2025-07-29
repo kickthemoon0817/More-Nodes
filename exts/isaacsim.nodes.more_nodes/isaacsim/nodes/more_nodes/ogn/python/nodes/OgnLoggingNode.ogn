@@ -1,0 +1,25 @@
+{
+    "LoggingNode": {
+        "version": 1,
+        "language": "python",
+        "icon": "data/icon.png",
+        "uiName": "Logging Node",
+        "description": [
+            "A node that logs messages to the console.",
+            "This node can be used to debug and trace the execution of a graph."
+        ],
+        "categoryDefinitions": "config/CategoryDefinition.json",
+        "categories": ["More Nodes"],
+        "inputs": {
+            "execIn": {
+                "type": "execution",
+                "description": "Signal to the graph that this node is ready to be executed.",
+                "uiName": "Execute In"
+            }
+        },
+        "outputs": {
+        },
+        "state": {
+        }
+    }
+}
