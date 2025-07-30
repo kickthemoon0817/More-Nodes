@@ -16,12 +16,12 @@ import omni.graph.core as og
 import carb
 
 
-class OgnDynamicMatcherInternalState:
-    """Convenience class for maintaining per-node state information"""
+# class OgnDynamicMatcherInternalState:
+#     """Convenience class for maintaining per-node state information"""
 
-    def __init__(self):
-        """Instantiate the per-node state information"""
-        status = False
+#     def __init__(self):
+#         """Instantiate the per-node state information"""
+#         status = False
 
 
 class OgnDynamicMatcher:

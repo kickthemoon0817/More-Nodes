@@ -15,6 +15,12 @@
                 "type": "execution",
                 "description": "Signal to the graph that this node is ready to be executed.",
                 "uiName": "Execute In"
+            },
+            "verbosity": {
+                "type": "bool",
+                "default": true,
+                "description": "If true, the node will log detailed information.",
+                "uiName": "Verbosity"
             }
         },
         "outputs": {
